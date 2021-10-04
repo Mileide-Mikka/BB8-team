@@ -1,50 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login-style.css">
+  <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
   <title>BB8</title>
 </head>
 
 <body>
   <main class="container">
     <header id="logo">
+      <div>
       <img src="imagens/Logo.png" alt="Imagem do logo da BB8">
+      </div>
     </header>
-    <h2>Register</h2>
-    <form method="post" name="form2" action="#">
-
+    <h2>Welcome back</h2>
+    <form method="post" name="form-login" action="#">
       <div class="input-field mail">
+        <label>
         <input type="text" name="email" id="user-email" placeholder="Email" required>
-        <di class="underline"></di>
+        </label>
       </div>
 
       <div class="input-field">
-        <input type="password" name="password" id="password" placeholder="PassWord" required>
-        <di class="underline"></di>
+        <label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        </label>
       </div>
 
-      <div class="log-in">
-
-        <p class="terms"><input type="checkbox" required> Keep me logged in</p>
-
-        <div class="butn">
-          <input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)">
-        </div>
-
-        <div>
-          <p>New here?
-            <a href="register.html"><span> Register </span></a>
-          </p>
-        </div>
+      <div>
+      <label class="terms">
+      <p>
+        <input type="checkbox" required> Keep me loggeed in</p>
+      </label>
       </div>
 
+      <div class="butn">
+        <button type="submit" name="submit" value="Register" onclick="ValidateEmail(document.form1.text1)"><span>Log in</span></button>
+      </div>
     </form>
 
     <footer class="footer">
+      <div class="log-in">
+        <div>
+          <p>New here?
+            <a href="register.html"><span>Register</span></a>
+          </p>
+        </div>
+      </div>
       <p>© 2021 BB8 Team. All rights reserved.</p>
     </footer>
   </main>

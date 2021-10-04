@@ -14,34 +14,45 @@
 <body onload='document.form1.text1.focus()'>
   <main class="container">
     <header id="logo">
+      <div>
       <img src="imagens/Logo.png" alt="Imagem do logo da BB8">
+      </div>
     </header>
     <h2>Register</h2>
-    <form method="post" name="form1" action="#">
+    <form method="post" name="form-register" action="#">
       <div class="input-field">
+        <label>
         <input type="text" name="username" id="username" placeholder="Name" required>
-        <di class="underline"></di>
+        </label>
       </div>
 
       <div class="input-field mail">
+        <label>
         <input type="text" name="email" id="user-email" placeholder="Email" required>
-        <di class="underline"></di>
+        </label>
       </div>
 
       <div class="input-field">
+        <label>
         <input type="password" name="password" id="password" placeholder="Password" required>
-        <di class="underline"></di>
+        </label>
       </div>
 
       <div class="input-field">
-        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" >
-        <di class="underline" required></di>
+        <label>
+        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
+        </label>
       </div>
 
-      <p class="terms"><input type="checkbox" required> I accert the <span>Terms of Use</span></p>
-
+      <div>
+      <label class="terms">
+      <p>
+        <input type="checkbox" required> I accert the <span>Terms of Use</span>
+      </p>
+      </label>
+      </div>
       <div class="butn">
-        <input type="submit" name="submit" value="Register" onclick="ValidateEmail(document.form1.text1)">
+        <button type="submit" name="submit" value="Register" onclick="ValidateEmail(document.form-register.text1)"><span> Register </span></button>
       </div>
     </form>
 

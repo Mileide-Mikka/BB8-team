@@ -1,0 +1,60 @@
+:root{
+  --butn-color: linear-gradient(135deg, #F7B733 0%, #F8982C 37.78%, #FC4A1A 100%);
+  --butn-color-hover:  linear-gradient(68deg, #FC4A1A 100%, #F8982C 37.78%, #F7B733 0%);
+  --bg-color: #f7f7f7;
+  --text-title-color: #7C7C7C;
+  --text-input-color: #ABABAB;
+  --text-span-color: #F97423;
+
+  --font-title-input: 'Roboto'; 
+  --font-butn-span: 'Nunito Sans';
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark Mode 
+
+:root{
+  --bg:white;
+  --btn-mode:white;
+  --btn-mode-color:#252728;
+  --btn-mode-hover:#181818;
+  --btn-mode-color-hover:white;
+}
+.dark-mode:root{
+  --bg:#252728;
+  --btn-mode:#181818;
+  --btn-mode-color:white;
+  --btn-mode-hover:white;
+  --btn-mode-color-hover:#181818;
+}
+body{
+  background-color:var(--bg);
+}
+.btn-mode{
+  position:fixed;
+  top:10px;
+  left:10px;
+  background-color:var(--btn-mode);
+  color:var(--btn-mode-color);
+  border-radius:10px;
+  padding:10px;
+  text-align:center;
+  font:16px Bahnschrift, sans-serif;;
+  box-shadow: 1px 1px 2px #888;
+  text-decoration:none;
+  z-index:1000;
+  cursor:pointer;
+}
+.btn-mode:hover{
+  background-color:var(--btn-mode-hover);
+  color:var(--btn-mode-color-hover);
+  box-shadow: 1px 1px 2px black;
+  transition: .5s;
+}
+ End Dark mode */

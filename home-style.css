@@ -1,4 +1,4 @@
-:root{
+/*:root{
   --butn-color: linear-gradient(135deg, #F7B733 0%, #F8982C 37.78%, #FC4A1A 100%);
   --butn-color-hover:  linear-gradient(68deg, #FC4A1A 100%, #F8982C 37.78%, #F7B733 0%);
   --bg-color: #f7f7f7;
@@ -17,7 +17,27 @@
   box-sizing: border-box;
 }
 
-/* Dark Mode 
+.row{
+  margin: 0;
+}
+
+#logo .logo{
+  width: 43px;
+}
+a {
+  text-decoration: none;
+}
+#menu ul li a{
+  text-decoration: none;
+}
+
+.bttn .btn.btn-success.btn-md{
+  display: flex;
+  left: 100%;
+  background: var(--butn-color);
+  border-color: var(--butn-color)
+}
+ Dark Mode 
 
 :root{
   --bg:white;
@@ -58,3 +78,292 @@ body{
   transition: .5s;
 }
  End Dark mode */
+
+ /* Geral */
+*{
+  font-family: "Roboto", sans-serif;
+}
+body{
+  background-color: var(--bs-white);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.roboto-light{
+  font-weight: 300;
+}
+.roboto-regular{
+  font-weight: 400;
+}
+.roboto-medium{
+  font-weight: 500;
+}
+.nunito{
+  font-family: 'Nunito', sans-serif;
+}
+:root{
+  --orange: #F97D26;
+  --orange2: #F8982C;
+}
+
+
+/* cabeçalho - nav*/
+header.row{
+  --bs-gutter-x: 0;
+}
+
+/* logo */
+a.navbar-brand{
+  color: var(--orange) !important;
+}
+a.navbar-brand img{
+  border-radius: 18px;
+}
+
+/* menu */
+nav .navbar-nav li:not(:last-child){
+  width: 165px;
+}
+nav .navbar-nav li a.btn{
+  width: 135px;
+  background-color: var(--orange);
+  color: #FFF;
+}
+nav .navbar-nav li a.btn:hover{
+  background-color: #FFF;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  transition: ease .5s;
+}
+
+
+/* Principal */
+.orange{
+  color: var(--orange2);
+}
+.p-30{
+  font-size: 30px;
+  color: #7C7C7C;
+}
+.btn-edit{
+  width: 208px;
+  height: 61px;
+  background-color: #FDE5CA;
+  color: var(--orange2);
+}
+.btn-edit:hover{
+  color: #FFF;
+  background-color: var(--orange);
+}
+.m-edit{
+  margin-top: 90px;
+}
+
+/* Seção company */
+#company{
+  background-color: var(--bs-company);
+}
+h2.roboto-medium, p.nunito{
+  color: var(--bs-company-text) ;
+}
+/* Seção Agency */
+
+#agency .card{
+  width: 24.6rem;
+  height: 24.4rem;
+  border-radius: 10px;
+  background-color: var(--bs-agency);
+}
+#agency .card p{
+  margin-top: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #989898;
+  max-width: 320px;
+}
+#agency .writing{
+  border-color: #BE49E8;
+}
+#agency .writing h4{
+  margin-bottom: 50px;
+  color: #BE49E8;
+}
+#agency .graphic{
+  border-color: #5398E9;
+}
+#agency .graphic h4{
+  color: #5398E9;
+  width: 165px;
+}
+#agency .software{
+  border-color: #2BBC5D;
+}
+#agency .software h4{
+  color: #2BBC5D;
+  max-width: 280px;
+}
+.icon{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* Citações */
+#citacoes .blockquote{
+  width: 405px;
+  height: 278px;
+  border: 1px solid #FFA540;
+  border-radius: 20px;
+  background-color: var(--bs-citacoes);
+}
+#citacoes .blockquote p, span{
+  color: var(--bs-citacoes-name);
+}
+#citacoes div.position-absolute{
+  top: 0 !important;
+  left: 10% !important;
+}
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;
+  background: #FFA540 url(../img/bg-footer.svg) no-repeat center;
+  padding: 50px 0 0 0;
+  color: #ffffff;
+}
+footer a{
+  color: #FFF !important;
+  font-size: 25px !important;
+}
+.get-intouch{
+  width: 367px!important;
+}
+
+/* Mobile */
+@media (min-width: 0px) and (max-width: 576px) { 
+  header nav .container-fluid{
+      padding: 0 !important;
+  }
+  img.mx-3{
+      margin: 0rem !important;
+  }
+  header nav button{
+      border: none !important;
+  }
+  header img{
+      width: 23px;
+      height: 23px;
+  }
+  nav a span.roboto-medium{
+      font-size: 18px;
+  }
+  .py-5{
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+  }
+  .m-5{
+      margin-right: 1.4rem !important;
+      margin-left: 1.4rem !important;
+  }
+  ul.navbar-nav{
+      align-items: center;
+  }
+  ul li.me-3{
+      margin: 0 !important;
+  }
+  .p-30{
+      font-size: 20px;
+  }
+  .mx-auto-edit{
+      margin: 3rem 3rem !important;
+  }
+  #company img, #company .col{
+      max-width: 135px !important;
+  }
+  #company h2{
+      font-size: 30px !important;
+      color: var(--orange2);
+  }
+  #company p{
+      font-size: 12px;
+  }
+  #agency .card{
+      width: 18.1rem;
+      height: 17.9rem;
+  }
+  #agency .card p{
+      font-size: 16px;
+  }
+  #citacoes .blockquote{
+      width: 323px;
+      height: 222px;
+  }
+  #citacoes .blockquote p{
+      font-size: 16px;
+  }
+  footer a{
+      font-size: 11px !important;
+  }
+
+}
+@media (min-width: 577px) and (max-width: 1400px){
+  #company .container-fluid .col, img{
+      max-width: 250px;
+  }
+}
+
+/* darkmode */
+:root{
+  --bs-white: white;
+  --btn-mode: white;
+  --btn-mode-color: #252728;
+  --btn-mode-hover: #383838;
+  --btn-mode-color-hover: white;
+  --bs-company: #E8E8E8;
+  --bs-company-text: #515151;
+  --bs-agency: white;
+  --bs-citacoes: #FFFCF8;
+  --bs-citacoes-border: #FFA540;
+  --bs-citacoes-name: #3B3B3B;
+}
+
+.dark-mode:root{
+  --bs-white: #2C2C2C;
+  --btn-mode: #181818;
+  --btn-mode-color: white;
+  --btn-mode-hover: white;
+  --btn-mode-color-hover: #181818;
+  --bs-company-text: #c6c6c6;
+  --bs-citacoes-name: #c6c6c6;
+  --bs-company: rgba(0, 0, 0, 0.2);
+  --bs-agency: rgba(0, 0, 0, 0.2);
+  --bs-citacoes: rgba(0, 0, 0, 0.2);
+}
+
+body{
+  background-color: var(--bs-white);
+}
+
+.btn-mode {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--btn-mode);
+  color: var(--btn-mode-color);
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align:center;
+  text-decoration: none;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+  .btn-mode:hover{
+    background-color: var(--btn-mode-hover);
+    border-color: #2b2b2b;
+    color: var(--btn-mode-color-hover);
+    transition: .5s;
+  }

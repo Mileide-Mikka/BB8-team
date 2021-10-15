@@ -364,27 +364,13 @@ footer a {
 }
 
 /* darkmode */
-:root {
-  --bs-white: white;
-  --btn-mode: white;
-  --btn-mode-color: #252728;
-  --btn-mode-hover: #383838;
-  --btn-mode-color-hover: white;
-  --bs-company: #E8E8E8;
-  --bs-company-text: #515151;
-  --bs-agency: white;
-  --bs-citacoes: #FFFCF8;
-  --bs-citacoes-border: #FFA540;
-  --bs-citacoes-name: #3B3B3B;
-}
-
 .dark-mode:root {
   --bs-white: #2C2C2C;
   --btn-mode: #181818;
   --btn-mode-color: white;
   --btn-mode-hover: white;
   --btn-mode-color-hover: #181818;
-  --bs-company-text: #c6c6c6;
+  --bs-company-text: #E8E8E8;
   --bs-citacoes-name: #c6c6c6;
   --bs-company: rgba(0, 0, 0, 0.2);
   --bs-agency: rgba(0, 0, 0, 0.2);
@@ -393,6 +379,7 @@ footer a {
 
 body {
   background-color: var(--bs-white);
+  color: var(--bs-company-text);
 }
 
 .btn-mode {

@@ -6,7 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="register-style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <!--Icon Darl mode-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
   <title>BB8 - Register</title>
 </head>
@@ -15,44 +19,45 @@
   <main class="container">
     <header id="logo">
       <div>
-      <img src="imagens/Logo.png" alt="Imagem do logo da BB8">
+        <img src="imagens/Logo.png" alt="Imagem do logo da BB8">
       </div>
     </header>
     <h2>Register</h2>
     <form method="post" name="form-register" action="#">
       <div class="input-field">
         <label>
-        <input type="text" name="username" id="username" placeholder="Name" required>
+          <input type="text" name="username" id="username" placeholder="Name" required>
         </label>
       </div>
 
       <div class="input-field mail">
         <label>
-        <input type="text" name="email" id="user-email" placeholder="Email" required>
+          <input type="text" name="email" id="user-email" placeholder="Email" required>
         </label>
       </div>
 
       <div class="input-field">
         <label>
-        <input type="password" name="password" id="password" placeholder="Password" required>
+          <input type="password" name="password" id="password" placeholder="Password" required>
         </label>
       </div>
 
       <div class="input-field">
         <label>
-        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
+          <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
         </label>
       </div>
 
       <div>
-      <label class="terms">
-      <p>
-        <input type="checkbox" required> I accert the <span>Terms of Use</span>
-      </p>
-      </label>
+        <label class="terms">
+          <p>
+            <input type="checkbox" required> I accert the <span>Terms of Use</span>
+          </p>
+        </label>
       </div>
       <div class="butn">
-        <button type="submit" name="submit" value="Register" onclick="ValidateEmail(document.form-register.text1)"><span> Register </span></button>
+        <button type="submit" name="submit" value="Register"
+          onclick="ValidateEmail(document.form-register.text1)"><span> Register </span></button>
       </div>
     </form>
 
@@ -68,9 +73,18 @@
     </footer>
   </main>
 
+      <!--Inicio Dark mode-->
+      <div id="dark-mode" class="btn-mode">
+        <i id="icon" class="fas fa-moon" onclick="myFunction()"></i>
+      </div>
+      <!--Fim Darl mode-->
+      <!--JS dark mode-->
+      <script src="dark-mode.js"></script>
+      <!--Fim JS dark mode-->
 
-  <script src="main.js"></script>
   <script src="validate.js"></script>
+  <script src="dark-mode.js"></script>
+
 </body>
 
 </html>

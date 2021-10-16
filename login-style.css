@@ -2,6 +2,7 @@
   --butn-color: linear-gradient(135deg, #F7B733 0%, #F8982C 37.78%, #FC4A1A 100%);
   --butn-color-hover:  linear-gradient(68deg, #FC4A1A 100%, #F8982C 37.78%, #F7B733 0%);
   --bg-color: #f7f7f7;
+  --bg-input: #e7e4e467;
   --text-title-color: #7C7C7C;
   --text-input-color: #ABABAB;
   --text-span-color: #F97423;
@@ -31,62 +32,15 @@ form {
   align-items: center;
 }
 
-#logo div{
-  position: relative;
-
-}
-
-#logo div img {
-  position: absolute;
-  display: flex;
-  width: 90px;
-  height: 90px;
-  align-self: center;
-  top: 40px;
-  left: 75px;
- /* position: relative; 
-  margin-top: 60px;
-
-  display: flex;
-    left: 430px
-*/  
-}
-
-
-
-main h2{
-  font: 400 2rem var(--font-title-input);
-  color: var(--text-title-color);
-  text-align: center;
-  margin-top: 12rem;
-  margin-bottom: 2rem;
-  position: relative;
-  text-align: center;
-}
-
-.input-field{
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 1rem;
-
-}
-
-.input-field label input{
-  display: flex;
-  border: none;
-  border-radius: 5px;
-  padding: 0.8rem;
-  width: 280px;
-  height: 100%;
-
-  font: 400 1.2rem var(--font-title-input);
-  line-height: 23px;
+/* BootStrap */
+.sub-title {
   color: var(--text-input-color);
-  background-color: var(--bg-color);
-
 }
 
-form button[type="submit"]{
+.inpt {
+  background: var(--bg-input);
+}
+.btn.btn-block.btn-color{
   margin-top: 2.43rem;
   width: 250px;
   height: 49px;
@@ -95,12 +49,12 @@ form button[type="submit"]{
   border-radius: 8px;
   margin-bottom: 0;
 }
-form button[type="submit"]:hover {
+.btn.btn-block.btn-color:hover {
   content: '';
   background: var(--butn-color-hover);
 }
 
-form .butn button span{
+.btn.btn-block.btn-color{
   color: var(--bg-color);
   font: 600 1.2rem var(--font-butn-span);
   line-height: 29px;
@@ -110,52 +64,55 @@ form .butn button span{
   text-align: center;
 }
 
-form label.terms p{
-  margin-top: 1.3rem; 
-  font: 600 0.87rem var(--font-butn-span);
+.new-user {
   color: var(--text-input-color);
 }
-
-label.terms span,
-.log-in span{
-  font: 400 var(--font-butn-span);
+.orange {
   color: var(--text-span-color);
-  text-align: center;
 }
 
-.log-in{
-  text-align: center;
-  padding: 4rem 0;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  cursor: pointer;
-
+.terms {
   color: var(--text-input-color);
 }
+/* Fim BootStrap */
 
-.log-in p a{
+
+/* darkmode */
+.dark-mode:root {
+  --bs-white: #2C2C2C;
+  --btn-mode: #181818;
+  --btn-mode-color: white;
+  --btn-mode-hover: white;
+  --btn-mode-color-hover: #181818;
+  --bs-company-text: #E8E8E8;
+  --bs-citacoes-name: #c6c6c6;
+  --bs-company: rgba(0, 0, 0, 0.2);
+  --bs-agency: rgba(0, 0, 0, 0.2);
+  --bs-citacoes: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: var(--bs-white);
+  color: var(--bs-company-text);
+}
+
+.btn-mode {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: var(--btn-mode-color);
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: center;
   text-decoration: none;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  z-index: 1000;
   cursor: pointer;
 }
 
-.footer .log-in p{
-  font: 400 0.83rem var(--font-butn-span);
-  color: var(--text-input-color);
-}
-
-.footer p {
-  font: 400 0.78rem var(--font-butn-span);
-  color: var(--text-input-color);
-  padding: 1rem 0;
-}
-
-.footer .log-in p a{
-  font: 400 0.83rem var(--font-butn-span);
-  font-weight: bold;
+.btn-mode:hover {
+  background-color: var(--btn-mode-hover);
+  border-color: #2b2b2b;
+  color: var(--btn-mode-color-hover);
+  transition: .5s;
 }

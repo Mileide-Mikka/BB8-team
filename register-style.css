@@ -2,6 +2,7 @@
   --butn-color: linear-gradient(135deg, #F7B733 0%, #F8982C 37.78%, #FC4A1A 100%);
   --butn-color-hover:  linear-gradient(68deg, #FC4A1A 100%, #F8982C 37.78%, #F7B733 0%);
   --bg-color: #f7f7f7;
+  --bg-input: #e7e4e467;
   --text-title-color: #7C7C7C;
   --text-input-color: #ABABAB;
   --text-span-color: #F97423;
